@@ -1,0 +1,3 @@
+# SpringMVC_AngularJS
+SpringMVC整合AngularJS
+使用SpringMVC以及Angular Ui-Router进行页面跳转的DEMO测试,希望大家能够帮助优化路由以及页面配置
