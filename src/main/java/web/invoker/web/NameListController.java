@@ -16,10 +16,10 @@ public class NameListController {
     @RequestMapping(value = "/list/name",method = RequestMethod.GET)
     public JSONObject getNameList(){
         List<String> stringList= new ArrayList<>();
-        stringList.add("毕权忠");
-        stringList.add("张文");
-        stringList.add("刘建军");
-        stringList.add("刘广伟");
+        stringList.add("海绵宝宝");
+        stringList.add("图图");
+        stringList.add("哪吒");
+        stringList.add("Invoker");
         JSONObject result=new JSONObject();
         result.put("data",stringList);
         return result;
