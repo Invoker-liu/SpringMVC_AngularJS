@@ -1,5 +1,6 @@
 /**
  * Created by kenkozheng on 2015/7/10.
+ * 配置路由跳转页
  */
 define(['angular', 'require', 'angular-route'], function (angular, require) {
 
