@@ -1,3 +1,4 @@
 # SpringMVC_AngularJS
 SpringMVC整合AngularJS
 使用SpringMVC以及Angular Ui-Router进行页面跳转的DEMO测试,希望大家能够帮助优化路由以及页面配置
+使用/代替#号,直接访问服务器的资源,导致404错误,需要寻找解决方案
