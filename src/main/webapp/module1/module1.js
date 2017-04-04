@@ -5,7 +5,7 @@ define(['angular','text!module1/tpl.html'], function (angular,tpl) {
 
     //angular会自动根据controller函数的参数名，导入相应的服务
     return {
-        controller:function($scope, $http, $interval,$routeParams){
+        controller:function($scope, $http, $interval,$routeParams,$location){
             $scope.info = 'kenko';      //向view/模版注入数据
             console.log($routeParams);
 
@@ -20,6 +20,13 @@ define(['angular','text!module1/tpl.html'], function (angular,tpl) {
                 i++;
                 $scope.info = i;
             }, 1000);
+            $scope.firstRequest=function () {
+                $http.get("/list/name").success(function (response) {
+                    var a=response.data;
+                    console.log(a);
+                    $location.path("module2");
+                });
+            };
         },
         tpl:tpl
     };

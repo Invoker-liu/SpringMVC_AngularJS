@@ -11,7 +11,7 @@ define(['angular', 'require', 'angular-route'], function (angular, require) {
 
     app.config(['$routeProvider', '$controllerProvider',
         function($routeProvider, $controllerProvider) {
-
+            //绑定JS与控制器名称的关系 以后添加网页需要配置这个对象
             var routeMap = {
                 '/module2/:name': {                           //路由
                     path: 'module2/module2.js',         //模块的代码路径
@@ -20,6 +20,10 @@ define(['angular', 'require', 'angular-route'], function (angular, require) {
                 '/module1/:name':{
                     path:'module1/module1.js',
                     controller:'module1Controller'
+                },
+                '/module3/:name':{
+                    path:'module3/module3.js',
+                    controller:'module3Controller'
                 }
             };
             var defaultRoute = '/module1';              //默认跳转到某个路由
