@@ -21,10 +21,10 @@ define(['angular','text!module1/tpl.html'], function (angular,tpl) {
                 $scope.info = i;
             }, 1000);
             $scope.firstRequest=function () {
-                $http.get("/list/name").success(function (response) {
+                $http.get("list/name/test").success(function (response) {
                     var a=response.data;
                     console.log(a);
-                    $location.path("module2");
+                    $location.path("#module2");
                 });
             };
         },

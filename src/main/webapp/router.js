@@ -10,7 +10,7 @@ define(['angular', 'require', 'angular-route'], function (angular, require) {
 
     app.config(['$routeProvider', '$controllerProvider','$locationProvider',
         function ($routeProvider, $controllerProvider,$locationProvider) {
-            $locationProvider.html5Mode({enabled:true,requireBase:true,rewriteLinks:true});
+            /* $locationProvider.html5Mode({enabled:true,requireBase:true,rewriteLinks:true});*/
             function generateRouterSetting(tplPath, ctrlPath, ctrlName) {
                 return {
                     templateUrl: tplPath,
